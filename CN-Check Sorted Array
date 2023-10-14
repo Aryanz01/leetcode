@@ -1,0 +1,15 @@
+https://www.codingninjas.com/studio/problems/ninja-and-the-sorted-check_6581957?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTab=0
+
+
+
+int isSorted(int n, vector<int> a) {
+    // Write your code here.
+
+    for(int i = 1; i < n; i++){
+if(a[i-1] > a[i]){
+    return 0;
+}
+    }
+    return 1;
+}
+
