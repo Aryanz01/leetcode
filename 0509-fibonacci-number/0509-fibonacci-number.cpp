@@ -46,3 +46,5 @@ public:
         
     }
 };
+
+//we can use prev1,prev2 varibales instead of dp array too;
