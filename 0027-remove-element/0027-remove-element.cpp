@@ -9,7 +9,9 @@ public:
                     nums[j] = nums[j + 1]; 
                 }
                 --n; 
-                --i;
+                --i;  // when an element is removed from 0,tab array is shifted to left
+                      // but the i index is moved to the 1 without again checking the
+                      // 0 index element. so it is necessary to decrement i.
             }
         }
         
