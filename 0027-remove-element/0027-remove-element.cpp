@@ -5,11 +5,11 @@ public:
         
         for (int i = 0; i < n; ++i) {
             if (nums[i] == val) {
-                for (int j = i; j < n - 1; ++j) { // Loop until n - 1 to avoid accessing out of bounds
-                    nums[j] = nums[j + 1]; // Move elements one position to the left
+                for (int j = i; j < n - 1; ++j) { 
+                    nums[j] = nums[j + 1]; 
                 }
-                --n; // Decrease the size of nums after moving an element
-                --i; // Decrement i to recheck the current position after moving an element
+                --n; 
+                --i;
             }
         }
         
