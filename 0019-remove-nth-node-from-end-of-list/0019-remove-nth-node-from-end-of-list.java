@@ -33,9 +33,9 @@ class Solution {
             fast=fast.next;
             
         }
-        if(slow.next != null || prev!= null ){
+       
         prev.next=slow.next;
-        }
+        
         
         return head;
         
