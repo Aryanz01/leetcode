@@ -1,58 +1,40 @@
+
+
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        int first = -1;
+        int last = -1;
+        int[] arr = new int[2];
+        
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                if (first == -1) {
+                    first = i;
+                }
+                last = i;
+            }
+        }
+        
+        arr[0] = first;
+        arr[1] = last;
+        
+        return arr;
+    }
+}
+
 /*
 
 class Solution {
     public int[] searchRange(int[] nums, int target) {
-        int cnt=0;
-        int i=0;
-        int first;
-        int last;
-        int arr[]=0;
-        int z=nums.length;
-        
-        
-        
-        while(z!=0){
-            if(i==target){
-            cnt++;
-            if(cnt==1){
-                first=i;
-            }
-            }
-            else{
-                arr[0]=first;
-                arr[1]=last;
-        }
-            
-            i++;
-        }
-        
-        last=i;
-        
-        arr[0]=first;
-        arr[1]=last;
-        
-        return arr;
-        
-        
-        
-    }
-}
-
-*/
-
-class Solution {
-    public int[] searchRange(int[] nums, int target) {
-        int[] result = {-1, -1}; // Initialize the result array with [-1, -1]
-        
-        // Find the first position of the target
+        int[] result = {-1, -1}; 
         result[0] = findPosition(nums, target, true);
         
-        // If the first position is not found, return [-1, -1]
+        
         if (result[0] == -1) {
             return result;
         }
         
-        // Find the last position of the target
+        
         result[1] = findPosition(nums, target, false);
         
         return result;
@@ -84,3 +66,5 @@ class Solution {
         return position;
     }
 }
+
+*/
