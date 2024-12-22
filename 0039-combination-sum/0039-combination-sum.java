@@ -16,7 +16,7 @@ class Solution {
         }
         
         
-        if (target <= 0) {
+        if (target < 0) {
             return;
         }
 
